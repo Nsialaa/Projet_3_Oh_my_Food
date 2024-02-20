@@ -14,6 +14,13 @@
     box-shadow: 6px 3px 6px #999393;
     opacity: 0.9; }
 
+footer {
+  background-color: #363535;
+  padding: 20px; }
+
+a {
+  text-decoration: none; }
+
 main {
   margin: auto; }
   main header {
@@ -108,5 +115,28 @@ form {
       align-items: center;
       position: relative;
       left: -15px; }
+
+.conteneur_child_footer {
+  display: flex;
+  flex-direction: column; }
+  .conteneur_child_footer .logo_footer {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    margin: 0px; }
+  .conteneur_child_footer .contenu_footer, .conteneur_child_footer .contenu_footer_devenir {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    justify-content: space-between;
+    color: white; }
+    .conteneur_child_footer .contenu_footer .title_proposer, .conteneur_child_footer .contenu_footer .title_footer, .conteneur_child_footer .contenu_footer_devenir .title_proposer, .conteneur_child_footer .contenu_footer_devenir .title_footer {
+      margin: 5px 0px 5px 0px;
+      font-size: 1.2em; }
+    .conteneur_child_footer .contenu_footer .title_footer a, .conteneur_child_footer .contenu_footer_devenir .title_footer a {
+      color: white; }
+  .conteneur_child_footer .contenu_footer_devenir {
+    width: 185px; }
 
 /*# sourceMappingURL=default.css.map */
