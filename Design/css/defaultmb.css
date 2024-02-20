@@ -1,0 +1,218 @@
+@charset "UTF-8";
+#section_reservation .btn {
+  height: 45px;
+  width: 240px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  margin-bottom: 40px; }
+  #section_reservation .btn:hover {
+    box-shadow: 6px 3px 6px #999393;
+    opacity: 0.9; }
+
+footer {
+  background-color: #363535;
+  padding: 20px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  margin: 0px; }
+
+main {
+  margin: auto; }
+  main header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: -15px;
+    height: 50px;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1; }
+  main .conteneur_localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: #F2F2F2;
+    box-shadow: 6px 6px 6px 6px #e6e4e4; }
+    main .conteneur_localisation .conteneur_child_localisation {
+      display: flex;
+      justify-content: space-around;
+      width: 40px; }
+      main .conteneur_localisation .conteneur_child_localisation .localisation_icon, main .conteneur_localisation .conteneur_child_localisation .localisation_ville {
+        font-size: 1.2em; }
+    main .conteneur_localisation input {
+      outline: none;
+      border: 2px solid transparent;
+      background-color: #F2F2F2;
+      font-size: 1.1em; }
+
+form {
+  margin-top: 50px; }
+
+::placeholder {
+  font-weight: bold;
+  color: black; }
+
+#section_reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  text-align: center; }
+  #section_reservation h1 {
+    font-size: 1.5em;
+    margin-bottom: 0px; }
+  #section_reservation .découvrez {
+    font-size: 1.2em; }
+
+.fonc {
+  margin-left: 20px; }
+
+.conteneur_fonctionnement {
+  display: flex;
+  height: 350px;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .conteneur_fonctionnement .Carte_choisissez {
+    margin: auto;
+    height: 80px;
+    width: 330px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer; }
+    .conteneur_fonctionnement .Carte_choisissez:hover {
+      transition: ease-in-out;
+      transform: scale(1.01);
+      background: #f5edff; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_icone {
+      margin-right: 15px; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_titre {
+      font-size: 1em; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_numero {
+      background-color: #9356DC;
+      border-radius: 20px;
+      width: 30px;
+      height: 30px;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: -15px; }
+
+#section_restaurants {
+  background-color: #F7F7F7; }
+  #section_restaurants .section_restaurants_title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    padding: 40px 20px 0px 20px; }
+
+.conteneur_carte_restaurant {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 20px 0px 20px; }
+  .conteneur_carte_restaurant .carte_restaurant {
+    height: 370px;
+    box-shadow: 6px 6px 6px 6px #e0dfdf;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px; }
+    .conteneur_carte_restaurant .carte_restaurant .img_resto img {
+      width: 100%;
+      height: 280px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      object-fit: cover; }
+  .conteneur_carte_restaurant .new {
+    position: relative; }
+  .conteneur_carte_restaurant .new::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+    color: #1f997c;
+    animation: pulsation 1s infinite; }
+
+.conteneur_description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .conteneur_description .conteneur_description_child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; }
+  .conteneur_description .restaurant_name, .conteneur_description .restaurant_localité {
+    margin: 0px;
+    font-size: 1.3em; }
+  .conteneur_description .restaurant_localité {
+    font-size: 1em;
+    font-family: 'roboto', sans-serif; }
+
+.coeur {
+  display: flex;
+  align-items: center; }
+  .coeur .has i {
+    position: relative;
+    left: -28px;
+    top: 1px;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: all 200ms ease-in-out; }
+    .coeur .has i:hover {
+      opacity: 1;
+      transform: translateY(-5%) scale(1.1); }
+
+.conteneur_child_footer {
+  display: flex;
+  flex-direction: column; }
+  .conteneur_child_footer .logo_footer {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    margin: 0px; }
+  .conteneur_child_footer .contenu_footer, .conteneur_child_footer .contenu_footer_devenir {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    justify-content: space-between;
+    color: white; }
+    .conteneur_child_footer .contenu_footer .title_proposer, .conteneur_child_footer .contenu_footer .title_footer, .conteneur_child_footer .contenu_footer_devenir .title_proposer, .conteneur_child_footer .contenu_footer_devenir .title_footer {
+      margin: 5px 0px 5px 0px;
+      font-size: 1.2em; }
+    .conteneur_child_footer .contenu_footer .title_footer a, .conteneur_child_footer .contenu_footer_devenir .title_footer a {
+      color: white; }
+  .conteneur_child_footer .contenu_footer_devenir {
+    width: 185px; }
+
+/*# sourceMappingURL=defaultmb.css.map */
