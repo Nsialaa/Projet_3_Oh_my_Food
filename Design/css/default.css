@@ -10,6 +10,9 @@
   font-size: 1em;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   margin-bottom: 40px; }
+  #section_reservation .btn:hover {
+    box-shadow: 6px 3px 6px #999393;
+    opacity: 0.9; }
 
 main {
   margin: auto; }
@@ -63,5 +66,47 @@ form {
     margin-bottom: 0px; }
   #section_reservation .découvrez {
     font-size: 1.2em; }
+
+.fonc {
+  margin-left: 30px; }
+
+.conteneur_fonctionnement {
+  display: flex;
+  justify-content: space-around;
+  height: 180px;
+  flex-wrap: wrap;
+  width: 69%;
+  margin: auto; }
+  .conteneur_fonctionnement .Carte_choisissez {
+    margin: auto;
+    height: 80px;
+    width: 280px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer; }
+    .conteneur_fonctionnement .Carte_choisissez:hover {
+      transition: ease-in-out;
+      transform: scale(1.01);
+      background: #f5edff; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_icone {
+      margin-right: 15px; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_titre {
+      font-size: 1em; }
+    .conteneur_fonctionnement .Carte_choisissez .Carte_numero {
+      background-color: #9356DC;
+      border-radius: 20px;
+      width: 30px;
+      height: 30px;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: -15px; }
 
 /*# sourceMappingURL=default.css.map */

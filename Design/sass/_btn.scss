@@ -10,4 +10,8 @@
     font-size: 1em;
     background-image: linear-gradient(to top,#9356DC,#FF79DA );
     margin-bottom: 40px;
+    &:hover{    
+    box-shadow: 6px 3px 6px rgb(153, 147, 147);
+    opacity: 0.9;
+    }
 }

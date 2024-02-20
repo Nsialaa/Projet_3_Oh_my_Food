@@ -79,3 +79,57 @@ form{
         @extend %btn;
     }
 }
+// SECTION FONCTIONNEMENT
+.fonc {
+    margin-left: 30px;
+}
+.conteneur_fonctionnement
+{
+    display: flex;
+    justify-content: space-around;
+    height: 180px;
+    flex-wrap: wrap;
+    width: 69%;
+    margin: auto;
+    .Carte_choisissez
+{
+    margin: auto;
+    height: 80px;
+    width: 280px;
+    background-color: #F7F7F7;
+    border-radius: 25px ;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    &:hover
+    {
+        transition: ease-in-out;
+        transform: scale(1.01);
+        background: #f5edff;
+    }
+    .Carte_icone
+    {
+    margin-right: 15px;
+    }
+    .Carte_titre
+    {
+    font-size: 1em;
+    }
+    .Carte_numero{
+    background-color: #9356DC;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -15px;
+    }
+    
+}
+}
