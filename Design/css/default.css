@@ -19,7 +19,8 @@ footer {
   padding: 20px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 main {
   margin: auto; }
@@ -115,6 +116,85 @@ form {
       align-items: center;
       position: relative;
       left: -15px; }
+
+#section_restaurants {
+  background-color: #F7F7F7; }
+  #section_restaurants .section_restaurants_title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px; }
+
+.conteneur_carte_restaurant {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto; }
+  .conteneur_carte_restaurant .carte_restaurant {
+    height: 300px;
+    box-shadow: 6px 6px 6px 6px #e0dfdf;
+    width: 45%;
+    border-radius: 20px;
+    margin-bottom: 50px; }
+    .conteneur_carte_restaurant .carte_restaurant .img_resto img {
+      width: 100%;
+      height: 220px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      object-fit: cover; }
+  .conteneur_carte_restaurant .new {
+    position: relative; }
+  .conteneur_carte_restaurant .new::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+    color: #1f997c;
+    animation: pulsation 1s infinite; }
+
+.conteneur_description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .conteneur_description .conteneur_description_child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; }
+  .conteneur_description .restaurant_name, .conteneur_description .restaurant_localité {
+    margin: 0px;
+    font-size: 1.3em; }
+  .conteneur_description .restaurant_localité {
+    font-size: 1em;
+    font-family: 'roboto', sans-serif; }
+
+.coeur {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 50px;
+  font-size: 1.7em; }
+  .coeur .has i {
+    position: relative;
+    left: -27px;
+    top: 1px;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: all 200ms ease-in-out; }
+    .coeur .has i:hover {
+      opacity: 1;
+      transform: translateY(-3%) scale(1.09); }
 
 .conteneur_child_footer {
   display: flex;
