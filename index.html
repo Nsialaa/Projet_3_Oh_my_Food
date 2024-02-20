@@ -10,6 +10,39 @@
     <title>Oh my Food</title>
 </head>
 <body>
+
+    <main>
+        <!-- HEADER -->
+        <header>
+            <div id="logo">
+               <img src="images/logo/ohmyfood@2x.svg" alt="logo_du_site">
+            </div>
+        </header>
+        <!-- FORM-->
+        <form class="conteneur_localisation" action="traitement.php" method="post">
+            <div class="conteneur_child_localisation">
+               <p class="localisation_icon">
+                  <i class="fas fa-map-marker-alt"></i>
+               </p>
+            </div>  
+            <input type="text" name="pseudo" id="pseudo" placeholder="Paris, Belleville..." maxlength="25">
+ 
+        </form>
+        <!-- SECTION RESERVATION -->
+        <section id="section_reservation">
+        
+            <h1>Réservez le menu qui <br> vous convient</h1>
+       
+        <div class="conteneur_child_reservation">
+           <p class="découvrez">
+               Découvrez des restaurants d'exception, <br> selectionnés par nos soins.
+          </p>
+          <div class="conteneur_button">
+              <button class="btn">Explorer nos restaurants</button>
+          </div>
+        </div>
+    </section>
+    </main>
     
 </body>
 </html>

@@ -1,3 +1,67 @@
+@charset "UTF-8";
+#section_reservation .btn {
+  height: 45px;
+  width: 240px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  margin-bottom: 40px; }
 
+main {
+  margin: auto; }
+  main header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: -15px;
+    height: 50px;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1; }
+  main .conteneur_localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: #F2F2F2;
+    box-shadow: 6px 6px 6px 6px #e6e4e4; }
+    main .conteneur_localisation .conteneur_child_localisation {
+      display: flex;
+      justify-content: space-around;
+      width: 40px; }
+      main .conteneur_localisation .conteneur_child_localisation .localisation_icon {
+        font-size: 1em; }
+    main .conteneur_localisation input {
+      outline: none;
+      border: 2px solid transparent;
+      background-color: #F2F2F2;
+      font-size: 1em; }
+
+form {
+  margin-top: 50px; }
+
+::placeholder {
+  font-weight: bold;
+  color: black;
+  font-size: 1.1em; }
+
+#section_reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  text-align: center;
+  height: 230px; }
+  #section_reservation h1 {
+    font-size: 1.5em;
+    margin-bottom: 0px; }
+  #section_reservation .découvrez {
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=default.css.map */
