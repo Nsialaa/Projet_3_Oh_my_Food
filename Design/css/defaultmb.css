@@ -177,10 +177,14 @@ form {
 
 .coeur {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 50px;
+  font-size: 1.7em; }
   .coeur .has i {
     position: relative;
-    left: -28px;
+    left: -27px;
     top: 1px;
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     background-clip: text;
