@@ -76,7 +76,8 @@ form {
     font-size: 1.2em; }
 
 .fonc {
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-top: 20px; }
 
 .conteneur_fonctionnement {
   display: flex;
