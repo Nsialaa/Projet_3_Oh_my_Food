@@ -1,6 +1,7 @@
 // MIXINS EXTEND INCLUDE @IMPORT *
 
 @import "_similaire.scss";
+@import "_footer.scss";
 // MAIN HEADER FORM
 body{
     margin: 0px;
@@ -234,35 +235,3 @@ form{
     } 
 }
 
-
-// FOOTER 
-.conteneur_child_footer
-{
-    display: flex;
-    flex-direction: column; 
-    .logo_footer{
-    font-size: 1.4em;
-    font-weight: 700;
-    color: white;
-    font-style: italic;
-    margin: 0px;
-}
-
-.contenu_footer, .contenu_footer_devenir{
-    display: flex;
-    align-items: center;
-    width: 220px;
-    justify-content: space-between;
-    color: white; 
-    .title_proposer, .title_footer{
-    margin: 5px 0px 5px 0px ; 
-    font-size: 1.2em;
-    }
-    .title_footer a{
-    color: white;
-    }
-}
-.contenu_footer_devenir{
-    width: 185px;
-}
-}
