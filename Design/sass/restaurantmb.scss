@@ -4,7 +4,13 @@
 @import "_footer.scss";
 @import "_animations.scss";
 
+
 // HEADER
+
+body
+{
+    margin: 0px;
+}
 
 header
 {
@@ -45,11 +51,9 @@ header
 {
     background-color: #f2f2f2;
     border-radius: 30px 30px 0px 0px;
-    padding-bottom: 30px;
-    width: 980px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 30px; 
+    padding-left: 10px;
+    padding-right: 10px;
   .header_menu
   {
     display: flex;
@@ -63,6 +67,7 @@ header
   display: flex;
   align-items: center;
   font-size: 1.5em;
+
   .has i{
   position: relative;
   left: -24px;
@@ -106,20 +111,31 @@ header
     margin-bottom: 15px;
     }
     .menu{
-    height: 75px;
-    width: 700px;
-    border-radius: 15px;
+    height: 80px;
+    width: 98%;
+    border-radius: 20px;
     background-color: white;
     display: flex;
     justify-content: space-between;
+    padding-left: 8px;
     align-items: center;
     margin-bottom: 30px;   
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 6px 6px 6px 6px #e4e0e0;
     animation: appear 3s;
-    overflow: hidden;  
-    padding-left: 30px;
-    cursor: pointer;
+    overflow: hidden; 
+    h2, p 
+    {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
+    } 
 
+    &:hover .conteneur_titledescription{
+    transition: 400ms ease-in-out ;
+    width: 220px;
+    }
     &:hover i{
       animation: rotation 600ms; 
     }
@@ -131,14 +147,25 @@ header
     }
     .conteneur_titledescription
     {
-        width: 80%;
+        width: 75%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         text-overflow: ellipsis;
         white-space: nowrap;
+        overflow: hidden;
+        .price
+        {
+           display: flex;
+           justify-content: flex-end;
+           width: 80px;
+        }
     
     }
     .title_epd{
        margin: 0px;
-       font-size: 1em;
+       font-size: 1.1em;
     }
     .description_epd{
     font-size: 0.9em;
@@ -152,9 +179,9 @@ header
     margin-right: -90px;
     .slide-left{
     background-color: #99E2D0;
-    height: 75px;
-    width: 75px;
-    border-radius: 0px 15px 15px 0px;
+    height: 80px;
+    width: 70px;
+    border-radius: 0px 20px 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,4 +207,10 @@ header
   .btn{
     @extend %btn;
   }
+}
+@media screen and (max-width: 320px) {
+
+    .menu h2{
+        font-size: 0.95em;
+    }  
 }
