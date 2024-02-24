@@ -2,8 +2,35 @@
 @mixin googleFonts($fonts){
     @import url('https://fonts.googleapis.com/css2?family=#{$fonts}');
 };
+
+@mixin border-radius($degres, $degres2, $degres3, $degres3){
+    -moz-border-radius:$degres;
+    -webkit-border-radius:$degres;
+    -ms-border-radius:$degres;
+     border-radius:$degres;
+}
+@mixin heightWidth($height, $width){
+    height: $height;
+    width: $width;
+}
 @include googleFonts(Roboto);
 @include googleFonts(Shrikhand);
+%displayCenter{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%displaySpace-around{
+    display: flex;
+    justify-content: space-around;   
+}
+%displaySpace-between{
+    display: flex;
+    justify-content: space-between;   
+}
+
+
 *{
 font-family: 'Roboto', sans-serif;  
 }
@@ -13,7 +40,7 @@ font-family: 'Roboto', sans-serif;
     height: 45px;
     width: 240px;
     border: none;
-    border-radius: 30px;
+    @include border-radius(20px, 20px, 20px, 20px);
     cursor: pointer;
     font-weight: bold;
     color: white;

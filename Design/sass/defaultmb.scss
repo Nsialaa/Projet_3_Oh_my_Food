@@ -12,29 +12,23 @@ main
     margin: auto;
     
     header{ 
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @extend %displayCenter;
+    @include heightWidth(50px, 100%);
     background-color: white;  
     position: fixed;
     top: -15px;
-    height: 50px;
-    align-items: center;
     padding-top: 20px;
     z-index: 1;
     }
     .conteneur_localisation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
+    @extend %displayCenter;
+    @include heightWidth(90px, 100%);
     background-color: #F2F2F2;
     box-shadow: 6px 6px 6px 6px rgb(230, 228, 228);
      
     .conteneur_child_localisation{
-    display: flex;
-    justify-content: space-around;
-    width: 40px; 
+    @extend %displaySpace-around;
+    width: 40px;
     
     .localisation_icon, .localisation_ville{
     font-size: 1.2em;
@@ -88,16 +82,15 @@ form{
 .conteneur_fonctionnement
 {
     display: flex;
-    height: 350px;
+    @include heightWidth(350px, 100%);
     flex-direction: column;
     justify-content: flex-start;
     .Carte_choisissez
 {
     margin: auto;
-    height: 80px;
-    width: 330px;
+    @include heightWidth(80px, 330px);
     background-color: #F7F7F7;
-    border-radius: 25px ;
+    @include border-radius(25px, 25px, 25px, 25px);
     box-shadow: 6px 6px 6px #F2F2F2;
     display: flex;
     justify-content: flex-start;
@@ -118,15 +111,12 @@ form{
     font-size: 1em;
     }
     .Carte_numero{
+    @extend %displayCenter;
     background-color: #9356DC;
-    border-radius: 20px;
-    width: 30px;
-    height: 30px;
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include heightWidth(30px, 30px);
     font-weight: bold;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     left: -15px;
     }
@@ -139,45 +129,38 @@ form{
     background-color: #F7F7F7;
 
     .section_restaurants_title{
-    display: flex;
-    justify-content: space-between;
+    @extend %displaySpace-between;
     padding: 40px 20px 0px 20px;
     }    
 }
-.conteneur_carte_restaurant
-{
-    justify-content: space-around;
+.conteneur_carte_restaurant{
+    @extend %displaySpace-around;
     flex-wrap: wrap;
-    justify-content: space-around;
     padding:0px 20px 0px 20px;
     .carte_restaurant{
-    height: 370px;
     box-shadow: 6px 6px 6px 6px #e0dfdf;
-    width: 100%;
-    border-radius: 20px;
+    @include heightWidth(370px, 100%);
+    @include border-radius(20px, 20px, 20px, 20px);
     margin-bottom: 30px;
-    .img_resto img
-{
-  width: 100%;
-  height: 280px;
-  border-top-left-radius: 20px;
-  border-top-right-radius:20px;
-  object-fit: cover;
-}
+    .img_resto img{
+    width: 100%;
+    height: 280px;
+    @include heightWidth(280px, 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    object-fit: cover;
+    }
 }   
 .new{
     position: relative;
 }
 .new::before{
+    @extend %displayCenter;
     content: "Nouveau";
     position: absolute;
-    height: 2rem;
-    width: 5rem;
+    @include heightWidth(2rem, 5rem);
     background-color: #99E2D0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    @include border-radius(5px, 5px, 5px, 5px);
     top: 1rem;
     right: 1rem;
     font-weight: bold;
@@ -188,14 +171,12 @@ form{
 }
 .conteneur_description
 {
-    display: flex;
-    justify-content: space-between;
+    @extend %displaySpace-between;
     width: 100%;
     .conteneur_description_child{
     
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @extend %displaySpace-between;
     padding: 10px 20px;
     }
 .restaurant_name, .restaurant_localité{
@@ -214,8 +195,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 50px;
-    width: 50px;
+    @include heightWidth(50px, 50px);
     font-size: 1.7em;
 
     .has i{

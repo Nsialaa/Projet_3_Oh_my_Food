@@ -1,6 +1,19 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand");
+header, .conteneur_menu_main .menu .conteneur_price_slide .slide-left, .conteneur_menu_main .menu .conteneur_price_slide .slide-left i {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#conteneur_menu .header_menu, .conteneur_menu_main .menu .conteneur_titledescription {
+  display: flex;
+  justify-content: space-around; }
+
+header .back, .conteneur_menu_main .menu, .conteneur_menu_main .menu .conteneur_price_slide {
+  display: flex;
+  justify-content: space-between; }
+
 * {
   font-family: 'Roboto', sans-serif; }
 
@@ -8,7 +21,10 @@
   height: 45px;
   width: 240px;
   border: none;
-  border-radius: 30px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
   color: white;
@@ -202,16 +218,11 @@ body {
 
 header {
   background-color: white;
-  width: 100%;
   height: 80px;
-  display: flex;
-  align-items: center;
+  width: 100%;
   position: fixed;
-  top: -10px;
-  justify-content: center; }
+  top: -10px; }
   header .back {
-    display: flex;
-    justify-content: space-between;
     font-size: 1.5em;
     width: 100px; }
 
@@ -229,30 +240,27 @@ header {
   padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px; }
-  #conteneur_menu .header_menu {
+  #conteneur_menu .header_menu h1 {
+    font-size: 1.7em;
+    font-family: 'Shrikhand', sans-serif; }
+  #conteneur_menu .header_menu .coeur {
     display: flex;
-    justify-content: space-around; }
-    #conteneur_menu .header_menu h1 {
-      font-size: 1.7em;
-      font-family: 'Shrikhand', sans-serif; }
-    #conteneur_menu .header_menu .coeur {
-      display: flex;
-      align-items: center;
-      font-size: 1.5em; }
-      #conteneur_menu .header_menu .coeur .has i {
-        position: relative;
-        left: -24px;
-        top: 1px;
-        background-image: linear-gradient(to top, #9356DC, #FF79DA);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-        cursor: pointer; }
-        #conteneur_menu .header_menu .coeur .has i:hover {
-          opacity: 1;
-          transform: translateY(-5%) scale(1.12); }
+    align-items: center;
+    font-size: 1.5em; }
+    #conteneur_menu .header_menu .coeur .has i {
+      position: relative;
+      left: -24px;
+      top: 1px;
+      background-image: linear-gradient(to top, #9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      opacity: 0;
+      transition: all 200ms ease-in-out;
+      cursor: pointer; }
+      #conteneur_menu .header_menu .coeur .has i:hover {
+        opacity: 1;
+        transform: translateY(-5%) scale(1.12); }
 
 .conteneur_menu_main {
   display: flex;
@@ -273,10 +281,11 @@ header {
   .conteneur_menu_main .menu {
     height: 80px;
     width: 100%;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
     border-radius: 20px;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
     padding-left: 8px;
     align-items: center;
     margin-bottom: 30px;
@@ -299,11 +308,9 @@ header {
       animation: slide-left 0.5s ease-in-out both;
       animation: slide-leftdesktop 700ms both; }
     .conteneur_menu_main .menu .conteneur_titledescription {
-      width: 75%;
       height: 50px;
-      display: flex;
+      width: 75%;
       flex-direction: column;
-      justify-content: space-around;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden; }
@@ -318,9 +325,7 @@ header {
       font-size: 0.9em;
       margin: 0px; }
     .conteneur_menu_main .menu .conteneur_price_slide {
-      display: flex;
       align-items: center;
-      justify-content: space-between;
       width: 130px;
       margin-right: -90px; }
       .conteneur_menu_main .menu .conteneur_price_slide .slide-left {
@@ -328,17 +333,14 @@ header {
         height: 80px;
         width: 70px;
         border-radius: 0px 20px 20px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: #99E2D0; }
         .conteneur_menu_main .menu .conteneur_price_slide .slide-left i {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           background-color: white;
-          width: 25px;
           height: 25px;
+          width: 25px;
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -ms-border-radius: 20px;
           border-radius: 20px; }
 
 .conteneur_button {

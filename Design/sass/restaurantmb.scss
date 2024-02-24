@@ -15,20 +15,15 @@ body
 header
 {
     background-color: white;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
+    @include heightWidth(80px, 100%);
+    @extend %displayCenter;
     position: fixed;
     top: -10px;
-    justify-content: center;
-
-
-        .back{
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.5em;
-        width: 100px;
+    
+    .back{
+    @extend %displaySpace-between;
+    font-size: 1.5em;
+    width: 100px;
 
     }   
     
@@ -36,8 +31,7 @@ header
 // IMAGE DE PRESENTATION
 .img_resto img
 {
-  height: 400px;
-  width: 100%;
+  @include heightWidth(400px, 100%);
   object-fit: cover;
   z-index: -1;
   position: relative;
@@ -50,14 +44,13 @@ header
 #conteneur_menu
 {
     background-color: #f2f2f2;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px 0px 0px;//
     padding-bottom: 30px; 
     padding-left: 10px;
     padding-right: 10px;
   .header_menu
   {
-    display: flex;
-    justify-content: space-around;
+    @extend %displaySpace-around;
   h1{
         
         font-size: 1.7em;
@@ -111,12 +104,10 @@ header
     margin-bottom: 15px;
     }
     .menu{
-    height: 80px;
-    width: 100%;
-    border-radius: 20px;
+      @include heightWidth(80px, 100%);
+    @include border-radius(20px, 20px, 20px, 20px);
     background-color: white;
-    display: flex;
-    justify-content: space-between;
+    @extend %displaySpace-between;
     padding-left: 8px;
     align-items: center;
     margin-bottom: 30px;   
@@ -147,11 +138,9 @@ header
     }
     .conteneur_titledescription
     {
-        width: 75%;
-        height: 50px;
-        display: flex;
+      @include heightWidth(50px, 75%);
+        @extend %displaySpace-around;
         flex-direction: column;
-        justify-content: space-around;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -172,28 +161,21 @@ header
     margin: 0px;
     }
     .conteneur_price_slide{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    @extend %displaySpace-between;
     width: 130px;
     margin-right: -90px;
     .slide-left{
     background-color: #99E2D0;
-    height: 80px;
-    width: 70px;
-    border-radius: 0px 20px 20px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include heightWidth(80px, 70px);
+    border-radius: 0px 20px 20px 0px; //
+    @extend %displayCenter;
     color: #99E2D0;
     i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %displayCenter;
     background-color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 20px;
+    @include heightWidth(25px, 25px);
+    @include border-radius(20px, 20px, 20px, 20px);
   }
   }
   }
