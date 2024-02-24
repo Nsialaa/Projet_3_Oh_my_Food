@@ -27,11 +27,16 @@ main
     box-shadow: 6px 6px 6px 6px rgb(230, 228, 228);
      
     .conteneur_child_localisation{
-    @extend %displaySpace-around;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 40px;
     
-    .localisation_icon, .localisation_ville{
-    font-size: 1.2em;
+    .localisation_icon{
+    font-size: 1em;
+    }
+    .localisation_ville{
+        font-size: 1.2em;
     }
     } 
     input
@@ -39,7 +44,8 @@ main
     outline: none;
     border: 2px solid transparent;
     background-color: #F2F2F2;
-    font-size: 1.1em;
+    font-size: 1em;
+    margin-left: 10px;
     }
     }
    

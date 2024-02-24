@@ -21,10 +21,10 @@ header .back, .conteneur_menu_main .menu, .conteneur_menu_main .menu .conteneur_
   height: 45px;
   width: 240px;
   border: none;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: bold;
   color: white;
